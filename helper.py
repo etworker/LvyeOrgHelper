@@ -60,6 +60,9 @@ if __name__ == "__main__":
 
     if len(sys.argv) <= 1:
         obj_helper.print_usage()
+
+        self.lvye_id = "老纳"
+        obj_helper.download(self.lvye_id)
     else:
         self.lvye_id = sys.argv[1]
         obj_helper.download(self.lvye_id)
