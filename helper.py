@@ -18,7 +18,7 @@ class LvyeOrgHelper(object):
         # https://www.google.com/search?q=老纳 统计信息 site:www.lvye.org"
         param = self.lvye_id + " 统计信息 site:www.lvye.org"
         print param
-        url = "https://www.google.com/search?q=" + param
+        url = u"https://www.google.com/search?q=" + param
         # url = url.encode('utf-8')
         print url
         return
