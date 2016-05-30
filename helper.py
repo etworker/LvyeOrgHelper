@@ -21,7 +21,7 @@ class LvyeOrgHelper(object):
         url = "https://www.google.com/search?q=" + param
         # url = url.encode('utf-8')
         print url
-        
+        return
         html_cont = self.downloader.downloadPage(url.encode('utf-8'))
         filename = dir + "/" + self.lvye_id + ".html"
         print filename
