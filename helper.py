@@ -10,7 +10,9 @@ class LvyeOrgHelper(object):
         self.parser = html_parser.HtmlParser()
         self.outputer = html_outputer.HtmlOutputer()
 
-    def download(self):
+    def download(self, id):
+        self.lvye_id = id
+        
         # search id page
         # https://www.google.com/search?q=老纳 统计信息 site:www.lvye.org"
         url = u"https://www.google.com/search?q=%s 统计信息 site:www.lvye.org" % self.lvye_id
@@ -61,9 +63,7 @@ if __name__ == "__main__":
     if len(sys.argv) <= 1:
         obj_helper.print_usage()
 
-        self.lvye_id = "老纳"
-        obj_helper.download(self.lvye_id)
+        obj_helper.download("老纳")
     else:
-        self.lvye_id = sys.argv[1]
-        obj_helper.download(self.lvye_id)
+        obj_helper.download(sys.argv[1])
     
