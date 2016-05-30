@@ -1,4 +1,4 @@
-__author__ = 'worker'
+﻿__author__ = 'worker'
 
 import traceback, urllib2, os, sys
 import html_downloader, html_parser, html_outputer
