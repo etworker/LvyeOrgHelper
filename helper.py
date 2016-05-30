@@ -61,6 +61,9 @@ class LvyeOrgHelper(object):
         print "python %s 老纳" % sys.argv[0]
 
 if __name__ == "__main__":
+    reload(sys)
+    sys.setdefaultencoding('utf8')
+
     obj_helper = LvyeOrgHelper()
 
     if len(sys.argv) <= 1:
